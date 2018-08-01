@@ -1,0 +1,65 @@
+{
+  "_from": "github:yellowdig/dropzone",
+  "_id": "dropzone@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-T2TPrUjmkKfcchWVjVfrizdE8GU=",
+  "_location": "/dropzone",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "dropzone@github:yellowdig/dropzone",
+    "name": "dropzone",
+    "escapedName": "dropzone",
+    "rawSpec": "github:yellowdig/dropzone",
+    "saveSpec": "github:yellowdig/dropzone",
+    "fetchSpec": null,
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:yellowdig/dropzone#9f73b348abcf5065c45ae6820fcdeca3c4d219cd",
+  "_spec": "dropzone@github:yellowdig/dropzone",
+  "_where": "/Users/kyleparisi/PhpstormProjects/xmltoxsv2",
+  "author": {
+    "name": "Kyle Parisi",
+    "url": "http://blog.kyleparisi.com"
+  },
+  "bugs": {
+    "url": "https://github.com/yellowdig/dropzone/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "microevent": "^1.0.0",
+    "yo-yo": "^1.4.0"
+  },
+  "deprecated": false,
+  "description": "A basic un-styled component for file uploads via a button or dropzone",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "uglify-js": "^2.8.14"
+  },
+  "homepage": "https://github.com/yellowdig/dropzone#readme",
+  "keywords": [
+    "dropzone",
+    "drag and drop",
+    "file upload"
+  ],
+  "license": "ISC",
+  "main": "bundle.min.js",
+  "name": "dropzone",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yellowdig/dropzone.git"
+  },
+  "scripts": {
+    "browserify": "browserify Dropzone.js --standalone Dropzone -o bundle.js -t [ babelify --presets [ es2015 ] ]",
+    "dev": "npm run browserify",
+    "prod": "npm run browserify && npm run uglify",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglify": "uglifyjs bundle.js > bundle.min.js"
+  },
+  "version": "1.0.0"
+}
