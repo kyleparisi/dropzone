@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="dropzone" style="height: 1080px">
+
+</div>
+<script src="./bundle.js"></script>
+<script>
+    const dropzone = new Dropzone({element: document.getElementById("dropzone")});
+    dropzone.bind("files", console.log);
+    dropzone.bind("dragover", dz => console.log(dz.state.dragging));
+</script>
+</body>
+</html>
